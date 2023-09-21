@@ -1,0 +1,75 @@
+.layout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+$margin: 24px;
+
+.todoListWrapper {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  height: 500px;
+  border: 5px solid #000000;
+  background-color: #f1e3f3;
+
+  .header {
+    display: flex;
+    flex-direction: column;
+    margin: $margin;
+
+    .title {
+      font-size: 32px;
+      color: #3590f3;
+    }
+
+    .subTitle {
+      font-size: 20px;
+      color: #62bfed;
+    }
+  }
+}
+
+.filter {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0px $margin;
+}
+
+.todoList {
+  height: 300px;
+  overflow: scroll;
+
+  .todoItem {
+    padding: 0px 24px;
+    margin: 4px 0px;
+    background: #8fb8ed;
+    color: #000000;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+$fontInputSize: 16px;
+$formElementHeight: 50px;
+
+.form {
+  margin: $margin;
+
+  .todoInput {
+    width: 280px;
+    height: $formElementHeight;
+    font-size: $fontInputSize;
+  }
+
+  .submitBtn {
+    width: 72px;
+    height: $formElementHeight;
+    font-size: $fontInputSize;
+  }
+}
